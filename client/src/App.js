@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from './components/Header/Header.component'
-
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import HomePage from './pages/Home/Home.component'
 class App extends React.Component {
 
     render(){
         return (
-            <div>
-                <Header />
-            </div>
+            <BrowserRouter>
+                <Switch>
+                    <Route path='/' exact component={HomePage} />
+                </Switch>
+            </BrowserRouter>
         )
     }
 }

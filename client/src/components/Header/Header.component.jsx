@@ -1,7 +1,11 @@
 import React from 'react';
-import { HeaderContainer, Navbar } from './Header.styled';
+import { HeaderContainer, Navbar, MainContent, ContentImage, ContentText } from './Header.styled';
+import { withRouter } from 'react-router-dom';
+import pineappleImage from '../../assets/pineapple.png'
+const Header = ({ isMainPage })=>{
 
-const Header = ()=>{
+    console.log(isMainPage);
+    
     return (
         <HeaderContainer>
             <Navbar>
@@ -23,8 +27,25 @@ const Header = ()=>{
                     </li>
                 </ul>
             </Navbar>
+            
+            <MainContent>
+                <ContentText>
+                <h3 className="headlines">
+                    <span>Fresh. Healthy. Organic.</span>
+                    <span className="highlight">Delicious fruits.</span>
+                </h3>
+                <div className="line"></div>
+                <p>
+                    Fruits es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                    melon azuki lemon orange apples.
+                </p>
+                </ContentText>
+                <ContentImage>
+                    <img src={pineappleImage} alt="pineapple-img"/>
+                </ContentImage>
+            </MainContent>
         </HeaderContainer>
     )
 }
 
-export default Header;
+export default withRouter(Header);
