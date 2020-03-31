@@ -60,7 +60,7 @@ export const Navbar = styled.nav`
             bottom: -.5rem;
             height: .2rem;
             width: 100%;
-            background-color: #78a206;
+            background-color: ${color_yellow};
 
             opacity: 0;
             visibility: hidden;
@@ -70,7 +70,7 @@ export const Navbar = styled.nav`
         }
 
         .navigation__link:hover {
-            color: #78a206;
+            color: ${color_yellow};
         }
         .navigation__link:hover::after {
             opacity: 1;
