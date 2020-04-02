@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const yellow = '#D8C149';
-
 export const Wrapper = styled.div`
 
     width: 100%;
@@ -57,22 +55,5 @@ export const CardBodyDescription = styled.div`
 `
 export const CardBodyButton = styled.div`
     text-align: center;
-
-    button {
-        border: .1rem solid $color-yellow;
-        padding: 1rem 5rem;
-        font-size: 1.2rem;
-        background-color: ${yellow};
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        border-radius: .5rem;
-        transition: background-color .4s, color .4s;
-        
-    }
-    button:hover {
-        background-color: transparent;
-        color: ${yellow};
-        border: .1rem solid ${yellow};
-    }
+    margin-top: 1.5rem;
 `

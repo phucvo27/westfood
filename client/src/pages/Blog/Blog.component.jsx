@@ -1,12 +1,15 @@
 import React from 'react';
-
+import Header from '../../components/Header/Header.component'
+import LayoutBlog from '../../components/Layout-Blog/Layout-Blog.component';
 
 const Blog = ()=>{
 
     return (
-        <div>
-            <p>This is Blog page</p>
-        </div>
+        <React.Fragment>
+            <Header isMainPage={false} />
+
+            <LayoutBlog />
+        </React.Fragment>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from './Grid.styled'
+import { Grid } from './Grid.styled';
 
 const GridComponent = (props) => {
 

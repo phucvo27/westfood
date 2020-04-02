@@ -7,20 +7,20 @@ const color_black = '#333';
 export const HeaderContainer = styled.header`
 
     width: 100%;
-    height: 90vh;
-    background-image: url(${bgImage});
+    height: ${props => props.isMainPage ? '90vh' : '10rem'};
+    background: ${props => props.isMainPage ? `url(${bgImage})` : '#fff'};
     background-size: cover;
-
+    box-shadow: ${props => props.isMainPage ? 'none' : '0rem 1rem 3rem rgba(0,0,0,.05)'}
 `
 
 export const Navbar = styled.nav`
 
-    height: 7rem;
+    height: ${props => props.isMainPage ? '7rem' : '100%'};
     
     
-    padding: 7rem 2rem;
+    padding: ${props => props.isMainPage ? '7rem 2rem' : '0 0'};
     display: flex;
-    jusitfy-content: flex-start;
+    justify-content: flex-start;
     align-items: center;
 
     .logo {
@@ -92,7 +92,6 @@ export const MainContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
 `
 
 export const ContentText = styled.div`
