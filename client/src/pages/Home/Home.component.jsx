@@ -3,7 +3,9 @@ import Header from '../../components/Header/Header.component';
 import Section from '../../components/Section/Section.component'
 import OurProducts from '../../components/Our-Products/Our-Products.component';
 import OfferSection from '../../components/Offer-Section/Offer-Section.component';
-import OrderSample from '../../components/Order-Sample/Order-Sample.component'
+import OrderSample from '../../components/Order-Sample/Order-Sample.component';
+import Footer from '../../components/Footer/Footer.component';
+
 class HomePage extends React.Component {
 
     render(){
@@ -17,6 +19,7 @@ class HomePage extends React.Component {
                 <Section>
                     <OfferSection />
                 </Section>
+                <Footer />
             </React.Fragment>       
         )
     }
