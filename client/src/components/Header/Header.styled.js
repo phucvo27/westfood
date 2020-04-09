@@ -42,7 +42,7 @@ export const Navbar = styled.nav`
 
         .navigation__item {
             transition: all .2s;
-            @media screen and (max-width: 800px){
+            @media screen and (max-width: 650px){
                 padding: 2rem 4rem;
                 width: 100%;
 
@@ -79,14 +79,14 @@ export const Navbar = styled.nav`
             transform-origin: center;
             transition: all .4s;
 
-            @media screen and (max-width: 800px){
+            @media screen and (max-width: 650px){
                 display: none;
             }
         }
 
         .navigation__link:hover {
             color: ${color_yellow};
-            @media screen and (max-width: 800px){
+            @media screen and (max-width: 650px){
                 color: ${color_white};
             }
         }
@@ -99,13 +99,13 @@ export const Navbar = styled.nav`
         .navigation__item:not(:last-child){
             margin-right: 4rem;
 
-            @media screen and (max-width: 800px){
+            @media screen and (max-width: 650px){
                 margin-right: 0;
                 border-bottom: .1rem solid #f4f4f4;
             }
         }
 
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 650px){
             position: absolute;
             top: ${props => props.isMainPage ? '10rem' : '7rem'};
             left: 0;
@@ -122,7 +122,7 @@ export const Navbar = styled.nav`
             }
         }
     }
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 650px){
         &.active {
             background-color: ${color_white};
         }
@@ -146,7 +146,7 @@ export const Burger = styled.div`
     display: none;
 
     
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 650px){
         display: flex;
     }
 
@@ -168,7 +168,7 @@ export const MainContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 650px){
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -177,7 +177,6 @@ export const MainContent = styled.div`
 
 export const ContentText = styled.div`
     align-self: center;
-    text-align: center;
     .headlines {
         font-weight: 300;
         span {
@@ -199,8 +198,9 @@ export const ContentText = styled.div`
         height: .1rem;
         background-color: ${color_yellow};
         margin: 1rem 0;
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 650px){
             margin: auto;
+            display: inline-block;
         }
     }
     p{
@@ -208,14 +208,18 @@ export const ContentText = styled.div`
         font-size: 2.4rem;
         line-height: 1.7;
         letter-spacing: .05rem;
-        @media screen and (max-width: 800px){
-            font-size: 1.6rem;
+
+        @media screen and (max-width: 650px){
+            padding: 1rem 2rem;
         }
+        
     }
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 650px){
         order: 2;
-        margin-top: 5rem;
+        margin-top: 20rem;
+
+        text-align: center;
     }
 `
 
@@ -226,10 +230,10 @@ export const ContentImage = styled.div`
         transform: scale(1.3) rotate(22deg);
     }
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 650px){
         order: 1;
         img {
-            width: 25rem;
+            width: 45rem;
         }
     }
 `

@@ -21,7 +21,9 @@ export const LeftContent = styled.div`
     p {
         font-size: 1.4rem;
         margin-bottom: 2rem;
-
+        @media screen and (max-width: 650px){
+            font-size: 2.4rem
+        }
     }
 `;
 
@@ -30,11 +32,8 @@ export const BoxAdress = styled.div`
     
     display: flex;
     padding: 1.2rem 0;
+    font-size: 1.4rem;
 
-    
-    span {
-        font-size: 1.4rem;
-    }
     span.bold {
         font-weight: 700;
         padding-right: 1rem;
@@ -42,6 +41,10 @@ export const BoxAdress = styled.div`
 
     @media screen and (max-width: 800px) {
         padding: 0;
+    }
+    @media screen and (max-width: 650px){
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
     }
 
 `
@@ -57,9 +60,8 @@ export const LogoImage = styled.div`
 `
 export const RightContent = styled.div`
     padding-left: 4rem;
-    span {
-        font-size: 1.4rem;
-    }
+    font-size: 1.4rem;
+
     span.bold {
         font-weight: 700;
         padding-right: 1rem;
@@ -69,6 +71,10 @@ export const RightContent = styled.div`
         padding: 0;
         margin-top: 2rem;
     }
+    @media screen and (max-width: 650px){
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
 `;
 
 export const Title = styled.h1`
@@ -77,4 +83,9 @@ export const Title = styled.h1`
     font-size: 2.4rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 650px){
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
+    }
 `;

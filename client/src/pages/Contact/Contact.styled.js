@@ -58,6 +58,9 @@ export const RightContent = styled.div`
         }
     }
 
+    @media screen and (max-width: 650px){
+        display: none;
+    }
 `;
 
 export const WorkTime = styled.div`

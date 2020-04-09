@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import HomePage from './pages/Home/Home.component';
 import ContactPage from './pages/Contact/Contact.component';
-import AboutPage from './pages/Contact/Contact.component';
+import AboutPage from './pages/About/About.component';
 import BlogPage from './pages/Blog/Blog.component';
 
 class App extends React.Component {

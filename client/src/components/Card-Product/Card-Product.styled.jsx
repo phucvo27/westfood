@@ -44,6 +44,10 @@ export const CardBodyTitle = styled.div`
     text-align: center;
     padding: 1rem 0;
     font-weight: normal;
+
+    @media screen and (max-width: 650px){
+        font-size: 3rem;
+    }
 `
 
 export const CardBodyDescription = styled.div`
@@ -51,6 +55,11 @@ export const CardBodyDescription = styled.div`
     margin-bottom: 1rem;
     text-align: center;
     font-weight: normal;
+
+    @media screen and (max-width: 650px){
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 
 `
 export const CardBodyButton = styled.div`

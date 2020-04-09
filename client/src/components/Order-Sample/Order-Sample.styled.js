@@ -67,6 +67,9 @@ export const Text = styled.div`
     p {
         font-size: 1.5rem;
         color: #fff;
+        @media screen and (max-width: 650px){
+            font-size: 2rem;
+        }
     }
 `
 
@@ -79,10 +82,18 @@ export const Box = styled.div`
     .subtext {
         font-size: 1.6rem;
         margin-bottom: 1rem;
+        @media screen and (max-width: 650px){
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
     }
     span.subtext {
         font-style: italic;
         display: block;
+        @media screen and (max-width: 650px){
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
     }
     .maintext {
         color: ${textColor};

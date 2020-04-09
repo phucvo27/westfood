@@ -6,13 +6,16 @@ import Section from '../../components/Section/Section.component';
 import Header from '../../components/Header/Header.component';
 import { Title, LeftContent, RightContent, WorkTime } from './Contact.styled';
 import Footer from '../../components/Footer/Footer.component';
+import { HeaderTitle } from '../../components/HeaderTitle/HeaderTitle.styled';
 
 const Contact = ()=>{
 
     return (
         <React.Fragment>
             <Header isMainPage={false}/>
-
+            <HeaderTitle>
+                <h3>Contact Us</h3>
+            </HeaderTitle>
             <Section margin='7rem'>
                 <Grid>
                     <LeftContent>

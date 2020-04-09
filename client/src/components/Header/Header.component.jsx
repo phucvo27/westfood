@@ -43,15 +43,15 @@ const Header = ({ isMainPage })=>{
                 
                 <MainContent>
                     <ContentText>
-                    <h3 className="headlines">
-                        <span>Fresh. Healthy. Organic.</span>
-                        <span className="highlight">Delicious fruits.</span>
-                    </h3>
-                    <div className="line"></div>
-                    <p>
-                        Fruits es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
-                        melon azuki lemon orange apples.
-                    </p>
+                        <h3 className="headlines">
+                            <span>Fresh. Healthy. Organic.</span>
+                            <span className="highlight">Delicious fruits.</span>
+                        </h3>
+                        <div className="line"></div>
+                        <p>
+                            Fruits es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                            melon azuki lemon orange apples.
+                        </p>
                     </ContentText>
                     <ContentImage>
                         <img src={pineappleImage} alt="pineapple-img"/>

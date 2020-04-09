@@ -41,18 +41,29 @@ export const BlogText = styled.div`
         font-size: 1.8rem;
         text-transform: uppercase;
 
+        @media screen and (max-width: 650px){
+            font-size: 2.8rem
+        }
+
     }
 
     .post-meta {
         font-size: 1.2rem;
         color: #9D9D9D;
         margin-bottom: 2.1rem;
+
+        @media screen and (max-width: 650px){
+            font-size: 1.8rem
+        }
     }
 
     p {
        font-size: 1.2rem;
        color: #9D9D9D;
        margin-bottom: 2.1rem; 
+       @media screen and (max-width: 650px){
+            font-size: 2.2rem
+        }
     }
 
 `
