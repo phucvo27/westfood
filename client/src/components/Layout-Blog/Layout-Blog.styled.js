@@ -4,13 +4,17 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section`
 
-    width: 120rem;
+    width: 80%;
 
     padding: 4rem 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 30rem 90rem;
     grid-column-gap: 3rem;
+
+    @media screen and (max-width: 800px){
+        grid-template-columns: 1fr;
+    }
 `
 
 export const LeftContent = styled.div`
@@ -30,10 +34,14 @@ export const LeftContent = styled.div`
         margin-bottom: 2.1rem;
     }
 
+    @media screen and (max-width: 800px){
+        display: none;
+    }
+
 `
 
 export const RightContent = styled.div`
 
-
+    width: 100%;
 
 `

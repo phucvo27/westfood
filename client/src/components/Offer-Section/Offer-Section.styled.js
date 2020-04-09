@@ -71,10 +71,20 @@ export const Text = styled.div`
         font-size: 1.6rem;
     }
 
+
+    @media screen and (max-width: 800px){
+        order: 2;
+    }
+
 `
 export const TextBox = styled.div`
     width: 75%;
     padding-left: 10rem;
+
+    @media screen and (max-width: 800px){
+        width: 100%;
+        padding-left: 0;
+    }
 `
 
 
@@ -83,6 +93,11 @@ export const Image = styled.div`
     text-align: center;
     img {
         width: 100%;
+    }
+
+    @media screen and (max-width: 800px){
+        order: 1;
+        margin-bottom: 2rem;
     }
 
 `

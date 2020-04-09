@@ -3,26 +3,26 @@ import bgImage from '../../assets/header-bg.png'
 
 const color_yellow = '#D8C149';
 const color_black = '#333';
-
+const color_white = '#fff';
 export const HeaderContainer = styled.header`
 
     width: 100%;
-    height: ${props => props.isMainPage ? '90vh' : '10rem'};
-    background: ${props => props.isMainPage ? `url(${bgImage})` : '#fff'};
+    height: ${props => props.isMainPage ? '90vh' : '7rem'};
+    background: ${props => props.isMainPage ? `url(${bgImage})` : `${color_white}`};
     background-size: cover;
     box-shadow: ${props => props.isMainPage ? 'none' : '0rem 1rem 3rem rgba(0,0,0,.05)'}
 `
-
+//height: ${props => props.isMainPage ? '7rem' : '100%'};
 export const Navbar = styled.nav`
 
-    height: ${props => props.isMainPage ? '7rem' : '100%'};
-    
+    height: 7rem;
+    width: 100%;
     
     padding: ${props => props.isMainPage ? '7rem 2rem' : '0 0'};
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    position: relative;
     .logo {
         max-width: 20rem;
         padding-left: 4rem;
@@ -34,12 +34,23 @@ export const Navbar = styled.nav`
 
     .navigation { 
         flex: 1;
-        max-width: 75%;
+        width: 75%;
         list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        .navigation__item {
+            transition: all .2s;
+            @media screen and (max-width: 800px){
+                padding: 2rem 4rem;
+                width: 100%;
+
+                &:hover {
+                    background-color: ${color_yellow};
+                }
+            }
+        }
         .navigation__link {
             text-decoration: none;
             font-size: 1.6rem;
@@ -67,10 +78,17 @@ export const Navbar = styled.nav`
             transform: scale(0);
             transform-origin: center;
             transition: all .4s;
+
+            @media screen and (max-width: 800px){
+                display: none;
+            }
         }
 
         .navigation__link:hover {
             color: ${color_yellow};
+            @media screen and (max-width: 800px){
+                color: ${color_white};
+            }
         }
         .navigation__link:hover::after {
             opacity: 1;
@@ -80,10 +98,68 @@ export const Navbar = styled.nav`
 
         .navigation__item:not(:last-child){
             margin-right: 4rem;
+
+            @media screen and (max-width: 800px){
+                margin-right: 0;
+                border-bottom: .1rem solid #f4f4f4;
+            }
+        }
+
+        @media screen and (max-width: 800px){
+            position: absolute;
+            top: ${props => props.isMainPage ? '10rem' : '7rem'};
+            left: 0;
+            width: 100%;
+            background-color: ${color_white};
+            z-index: 999;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            display: none;
+            &.active {
+
+                display: flex;
+            }
         }
     }
+    @media screen and (max-width: 800px){
+        &.active {
+            background-color: ${color_white};
+        }
+    }
+    
 `
 
+export const Burger = styled.div`
+    position: absolute;
+    top: 50%;
+    right: 4rem;
+    transform: translateY(-50%);
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+
+    display: none;
+
+    
+    @media screen and (max-width: 1024px){
+        display: flex;
+    }
+
+`
+export const Line = styled.div`
+    height: .2rem;
+    width: 100%;
+    background-color: ${color_black};
+
+    &:not(:last-child){
+        margin-bottom: .1rem;
+    }
+`
 
 export const MainContent = styled.div`
 
@@ -92,11 +168,16 @@ export const MainContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const ContentText = styled.div`
     align-self: center;
-
+    text-align: center;
     .headlines {
         font-weight: 300;
         span {
@@ -104,6 +185,10 @@ export const ContentText = styled.div`
             font-size: 3.2rem;
             color: $color-black;
             line-height: 1.7;
+
+            @media screen and (max-width: 800px){
+                font-size: 2.8rem;
+            }
         }
         span.highlight {
             color: ${color_yellow};
@@ -114,12 +199,23 @@ export const ContentText = styled.div`
         height: .1rem;
         background-color: ${color_yellow};
         margin: 1rem 0;
+        @media screen and (max-width: 800px){
+            margin: auto;
+        }
     }
     p{
         color: ${color_black};
         font-size: 2.4rem;
         line-height: 1.7;
         letter-spacing: .05rem;
+        @media screen and (max-width: 800px){
+            font-size: 1.6rem;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        order: 2;
+        margin-top: 5rem;
     }
 `
 
@@ -128,5 +224,12 @@ export const ContentImage = styled.div`
     img {
         width: 45rem;
         transform: scale(1.3) rotate(22deg);
+    }
+
+    @media screen and (max-width: 800px){
+        order: 1;
+        img {
+            width: 25rem;
+        }
     }
 `

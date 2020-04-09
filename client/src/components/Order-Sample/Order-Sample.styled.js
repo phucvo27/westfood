@@ -25,6 +25,10 @@ export const Wrapper = styled.section`
         background-position: center;
         background-repeat: repeat;
     }
+
+    @media screen and (max-width: 800px){
+        height: 70rem;
+    }
 `;
 
 export const Container = styled.div`
@@ -33,7 +37,7 @@ export const Container = styled.div`
     top: 50%;
     left: 50%;
     z-index: 2;
-    width: 114rem;
+    width: 80%;
     transform: translate(-50%, -50%);
 
 `
@@ -83,6 +87,10 @@ export const Box = styled.div`
     .maintext {
         color: ${textColor};
         font-size: 3.2rem;
+    }
+
+    @media screen and (max-width: 800px){
+        width: 100%;
     }
 
 `

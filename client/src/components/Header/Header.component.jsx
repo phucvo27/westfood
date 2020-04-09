@@ -1,12 +1,18 @@
 import React from 'react';
-import { HeaderContainer, Navbar, MainContent, ContentImage, ContentText } from './Header.styled';
+import { HeaderContainer, Navbar, MainContent, ContentImage, ContentText, Burger, Line } from './Header.styled';
 import { withRouter } from 'react-router-dom';
 import pineappleImage from '../../assets/pineapple.png';
 
 
 const Header = ({ isMainPage })=>{
 
-    console.log(isMainPage);
+    const handleClickBurger = ()=>{
+        console.log('clicked');
+        const navigation = document.querySelector('.navigation');
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
     if(isMainPage){
         return (
             <HeaderContainer isMainPage={isMainPage}>
@@ -28,6 +34,11 @@ const Header = ({ isMainPage })=>{
                             <a className='navigation__link' href="/contact">Contact US</a>
                         </li>
                     </ul>
+                    <Burger isMainPage={isMainPage} onClick={handleClickBurger}>
+                        <Line />
+                        <Line />
+                        <Line />
+                    </Burger>
                 </Navbar>
                 
                 <MainContent>
@@ -69,6 +80,11 @@ const Header = ({ isMainPage })=>{
                             <a className='navigation__link' href="/contact">Contact US</a>
                         </li>
                     </ul>
+                    <Burger isMainPage={isMainPage} onClick={handleClickBurger}>
+                        <Line />
+                        <Line />
+                        <Line />
+                    </Burger>
                 </Navbar>
             </HeaderContainer>
         )

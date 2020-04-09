@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 `
 export const Container = styled.div`
 
-    width: 120rem;
+    width: 80%;
     margin: 0 auto;
     padding: 15rem 0;
 
@@ -40,6 +40,10 @@ export const BoxAdress = styled.div`
         padding-right: 1rem;
     }
 
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
+
 `
 
 export const LogoImage = styled.div`
@@ -61,6 +65,10 @@ export const RightContent = styled.div`
         padding-right: 1rem;
     }
 
+    @media screen and (max-width: 800px) {
+        padding: 0;
+        margin-top: 2rem;
+    }
 `;
 
 export const Title = styled.h1`

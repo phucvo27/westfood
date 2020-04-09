@@ -4,7 +4,7 @@ const borderColor = '#e8e8e8'
 
 export const Wrapper = styled.div`
 
-    
+    width: 100%;
     border: none;
     &:hover img {
         transform: scale(1.2)
