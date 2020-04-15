@@ -9,7 +9,10 @@ import Footer from '../../components/Footer/Footer.component';
 import HeaderTitle from '../../components/HeaderTitle/Header-Title.component';
 import GoogleMap from '../../components/Map/GoogleMap.component';
 
+const mapURl2 = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_API}&callback=initMap`;
+
 const Contact = ()=>{
+    console.log(process.env.REACT_APP_GOOGLE_API)
     return (
         <React.Fragment>
             <Header isMainPage={false}/>
@@ -21,7 +24,7 @@ const Contact = ()=>{
                 
                 <GoogleMap 
                     isMarkerShown
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmCyg8R6nJN_TSCtfJVbXot5th46mqswg&callback=initMap"
+                    googleMapURL={mapURl2}
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div style={{ height: `500px` }} />}
                     mapElement={<div style={{ height: `100%` }} />}
