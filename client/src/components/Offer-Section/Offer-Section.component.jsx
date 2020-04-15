@@ -1,7 +1,8 @@
 import React from 'react';
 import Grid from '../Grid/Grid.component';
-import { Text, TextBox, Image, ButtonGroup, Wrapper, SectionTitle } from './Offer-Section.styled';
-import { Button } from '../Button/Button.styled'
+import { Text, TextBox, Image, Wrapper } from './Offer-Section.styled';
+import Button from '../Button/Button.component';
+import SectionTitle from '../Section-Title/Section-Title.component';
 const OfferSection = ()=>{
     return (
         <Wrapper>
@@ -15,17 +16,16 @@ const OfferSection = ()=>{
                     <TextBox>
                         <p className='secondary-title'>WE OFFER YOU TO</p>
                         <h1 className='main-title'>
-                            <span>Unlock your potential</span>
-                            <span>with good <span className='highlight'>nutrition</span> </span>
+                            Unlock your potential with good <span className='highlight'>nutrition</span>
                         </h1>
                         <p>
                             Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato
                         </p>
-                        <ButtonGroup>
-                            <Button>
-                                Go To Our Blogs
-                            </Button>
-                        </ButtonGroup>
+                        <Button 
+                            text='Go To Our Blogs'
+                            marginTop='3rem'
+                            willNavigate='/blogs'
+                        />
                     </TextBox>
                     
                 </Text>

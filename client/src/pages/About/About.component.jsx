@@ -6,16 +6,18 @@ import Grid from '../../components/Grid/Grid.component';
 import { TextBox, ImageBox, Wrapper, Section } from './About.styled';
 import productImage from '../../assets/products.jpg';
 import farmImage from '../../assets/farm.jpg';
-import { HeaderTitle } from '../../components/HeaderTitle/HeaderTitle.styled';
+import HeaderTitle from '../../components/HeaderTitle/Header-Title.component';
+import OurMissions from '../../components/Our-Missions/Our-Missions.component';
 
 const About = ()=>{
 
     return (
         <React.Fragment>
             <Header isMainPage={false} />
-            <HeaderTitle>
-                <h3>About Us</h3>
-            </HeaderTitle>
+            <HeaderTitle
+                title='About Us'
+                subTitle='Podcasting operational change management inside of workflows to establish a framework.'
+            />
             <Wrapper>
                 <Section>
                     <Grid>
@@ -50,6 +52,8 @@ const About = ()=>{
                         
                     </Grid>
                 </Section>
+
+                <OurMissions />
                 <Footer />
             </Wrapper>
         </React.Fragment>

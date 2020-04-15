@@ -96,6 +96,14 @@ export const Navbar = styled.nav`
             transform: scale(1);
         }
 
+        .navigation__link.active {
+            color: ${color_yellow};
+            &::after {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
         .navigation__item:not(:last-child){
             margin-right: 4rem;
 
@@ -227,7 +235,7 @@ export const ContentImage = styled.div`
 
     img {
         width: 45rem;
-        transform: scale(1.3) rotate(22deg);
+        transform: scale(1) rotate(22deg);
     }
 
     @media screen and (max-width: 650px){

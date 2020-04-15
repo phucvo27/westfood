@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrapper, BlogImage, BlogText} from './Card-Blog.styled';
-import { Button } from '../Button/Button.styled'
+import Button from '../Button/Button.component'
 const CardBlog = ({ imageUrl })=>{
     return (
         <Wrapper>
@@ -17,11 +17,9 @@ const CardBlog = ({ imageUrl })=>{
                 </div>
 
                 <p>
-                Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero...
+                    Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero...
                 </p>
-                <div>
-                    <Button>Read more</Button>
-                </div>
+                <Button text='Read More' isCenter={true} />
             </BlogText>
         </Wrapper>
     )

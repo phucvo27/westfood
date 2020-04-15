@@ -12,9 +12,9 @@ export const Wrapper = styled.div`
 export const Section = styled.section`
 
     padding: 5rem 0 10rem;
-    width: 100%;
+    width: 80%;
     background-color: ${color_white};
-    margin: 7rem 0;
+    margin: 7rem auto;
     
 `
 export const TextBox = styled.div`

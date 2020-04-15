@@ -6,17 +6,30 @@ import Section from '../../components/Section/Section.component';
 import Header from '../../components/Header/Header.component';
 import { Title, LeftContent, RightContent, WorkTime } from './Contact.styled';
 import Footer from '../../components/Footer/Footer.component';
-import { HeaderTitle } from '../../components/HeaderTitle/HeaderTitle.styled';
+import HeaderTitle from '../../components/HeaderTitle/Header-Title.component';
+import GoogleMap from '../../components/Map/GoogleMap.component';
 
 const Contact = ()=>{
-
     return (
         <React.Fragment>
             <Header isMainPage={false}/>
-            <HeaderTitle>
-                <h3>Contact Us</h3>
-            </HeaderTitle>
-            <Section margin='7rem'>
+            <HeaderTitle
+                title='Contact Us'
+                subTitle='Podcasting operational change management inside of workflows to establish a framework.'
+            />
+            <Section paddingTop='2rem'>
+                
+                <GoogleMap 
+                    isMarkerShown
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmCyg8R6nJN_TSCtfJVbXot5th46mqswg&callback=initMap"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `500px` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                
+                />
+            </Section>
+            <Section paddingTop='0rem'>
+                <Title isHeadTitle={true}>Send us an Email</Title>
                 <Grid>
                     <LeftContent>
                         <Title>
@@ -73,6 +86,7 @@ const Contact = ()=>{
                     </RightContent>
                 </Grid>
             </Section>
+            
             <Footer />
         </React.Fragment>
     )

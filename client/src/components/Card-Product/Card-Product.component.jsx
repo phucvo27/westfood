@@ -4,10 +4,9 @@ import {
     CardImage,
     CardBody,
     CardBodyTitle,
-    CardBodyDescription,
-    CardBodyButton
+    CardBodyDescription
 } from './Card-Product.styled';
-import { Button } from '../Button/Button.styled';
+import Button from '../Button/Button.component';
 
 const Card = ({ imageUrl, title, description})=>{
     return (
@@ -23,9 +22,7 @@ const Card = ({ imageUrl, title, description})=>{
                 <CardBodyDescription>
                     <p>{description}</p>
                 </CardBodyDescription>
-                <CardBodyButton>
-                    <Button>Learn More</Button>
-                </CardBodyButton>
+                <Button text='Read More' isCenter={true}/>
             </CardBody>
         </Wrapper>
     )

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper, Container, Text, Box } from './Order-Sample.styled';
 import Grid from '../Grid/Grid.component';
-import { Button } from '../Button/Button.styled' 
+import Button from '../Button/Button.component' 
 const OrderSample = ()=>{
     return (
         <Wrapper>
@@ -21,11 +21,11 @@ const OrderSample = ()=>{
                             <p className='subtext'>
                                 Efficiently unleash cross-media information without cross-media value.
                             </p>
-                            <div>
-                                <Button>
-                                    Contact Us
-                                </Button>
-                            </div>
+                            <Button 
+                                text='Contact Us'
+                                marginTop='2rem'
+                                willNavigate='/contact'
+                            />
                         </Box>
                     </div>
                 </Grid>

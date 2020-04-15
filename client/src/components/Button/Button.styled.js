@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 const yellow = '#D8C149';
 
+export const Wrapper = styled.div`
+
+    margin-top: ${props => props.marginTop ? props.marginTop : '0rem'};
+    text-align: ${props => props.isCenter ? 'center' : 'left'};
+
+`;
 export const Button = styled.button`
 
     border: .1rem solid ${yellow};
@@ -12,7 +18,7 @@ export const Button = styled.button`
     cursor: pointer;
     border-radius: .5rem;
     transition: background-color .4s, color .4s;
-    }
+    
     &:hover {
         background-color: transparent;
         color: ${yellow};

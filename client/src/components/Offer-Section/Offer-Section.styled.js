@@ -9,38 +9,6 @@ export const Wrapper = styled.div`
     margin: 0 auto;
 `
 
-export const SectionTitle = styled.div`
-
-    text-align: center;
-    
-    color: #333;
-    margin-bottom: 10rem;
-    p {
-        font-size: 1.6rem;
-        font-weight: 400;
-    }
-    .secondary-title {
-        font-size: 2rem;
-        font-style: italic;
-        margin-bottom: 1rem;
-    }
-
-    .main-title {
-        font-size: 3.2rem;
-        font-weight: normal;
-        margin-bottom: 1rem;
-    }
-    .line {
-        width: 5rem;
-        height: .1rem;
-        background-color: ${yellow};
-        margin: 1rem 0;
-        display: inline-block;
-    }
-    
-
-`
-
 export const Text = styled.div`
 
     text-align: left;
@@ -53,6 +21,10 @@ export const Text = styled.div`
     .secondary-title {
         font-size: 2rem;
         text-transform: uppercase;
+
+        @media screen and (max-width: 650px){
+            font-size: 2.7rem;
+        }
     }
     .main-title {
         font-size: 3.4rem;
@@ -66,9 +38,15 @@ export const Text = styled.div`
             color: ${yellow};
             display: inline;
         }
+        @media screen and (max-width: 650px){
+            font-size: 4.2rem;
+        }
     }
     p {
         font-size: 1.6rem;
+        @media screen and (max-width: 650px){
+            font-size: 2.2rem;
+        }
     }
 
 

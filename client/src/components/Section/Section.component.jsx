@@ -4,7 +4,7 @@ import { Wrapper } from './Section.styled';
 
 const Section = (props)=>{
     return (
-        <Wrapper margin={props.margin}>
+        <Wrapper margin={props.margin} paddingTop={props.paddingTop}>
             {props.children}
         </Wrapper>
     )
