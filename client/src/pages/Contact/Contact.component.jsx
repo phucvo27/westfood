@@ -9,7 +9,7 @@ import Footer from '../../components/Footer/Footer.component';
 import HeaderTitle from '../../components/HeaderTitle/Header-Title.component';
 import GoogleMap from '../../components/Map/GoogleMap.component';
 
-const mapURl = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_API}&callback=initMap`;
+const mapURl = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBmCyg8R6nJN_TSCtfJVbXot5th46mqswg&callback=initMap`;
 
 const Contact = ()=>{
     console.log(process.env.REACT_APP_GOOGLE_API)
