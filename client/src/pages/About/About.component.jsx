@@ -9,6 +9,7 @@ import farmImage from '../../assets/farm.jpg';
 import HeaderTitle from '../../components/HeaderTitle/Header-Title.component';
 import OurMissions from '../../components/Our-Missions/Our-Missions.component';
 
+//Với diện tích nông trại hơn <span className='bold'>10 hecta</span>. Chúng tôi tự tin cung cấp nguồn cung dồi dào
 const About = ()=>{
 
     return (
@@ -23,10 +24,11 @@ const About = ()=>{
                     <Grid>
                         <TextBox>
                             <h3 className='headline'>
-                                Quy mô nông trai
+                                VƯỜN ƯƠM & VÙNG NGUYÊN LIỆU
                             </h3>
                             <p>
-                                Với diện tích nông trại hơn <span className='bold'>10 hecta</span>. Chúng tôi tự tin cung cấp nguồn cung dồi dào
+                                
+                                Với vùng nguyên liệu <span className='bold'>đạt chuẩn GLOBAL GAP</span>, quy mô ngày càng mở rộng, được canh tác bởi các nhà nông lành nghề, đội ngũ kỹ thuật viên chuyên môn cao và quy trình được quản lý chặt chẽ, Westfoods đảm bảo mang đến không chỉ những trái khóm MD2 tươi ngon, mà còn những tác động tích cực đến môi trường và đời sống của những nông hộ cần mẫn chăm sóc vườn khóm của chúng tôi
                             </p>
                         </TextBox>
                         <ImageBox>
@@ -42,11 +44,10 @@ const About = ()=>{
                         </ImageBox>
                         <TextBox>
                             <h3 className='headline'>
-                                Sản phẩm <span className='bold'>MD2</span>
+                                <span className='bold'>KHÓM MD2</span> – WESTFOODS GOLD
                             </h3>
                             <p>
-                                Sản phẩm MD2 là một trong các sản phẩm chủ lực của công ty chúng tôi.
-                                Sản phẩm đã được tin dùng và xuất khẩu sang nhiều nước khác nhau , và nhận được các phản hồi tích cực từ các nước bạn 
+                            Được nâng niu từ đồng ruộng đến tay người tiêu dùng, những trái khóm trĩu mật ngọt của Westfoods Gold mang đến vị ngọt thơm ngát từ tự nhiên, trở thành nguồn vitamin C và chất xơ chăm sóc sức khỏe mọi người. Điều đặc biệt là giống khóm MD2 của chúng tôi sẽ không gây đau rát lưỡi khi thưởng thức, các bạn an tâm nhé!
                             </p>
                         </TextBox>
                         

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-
+import innerImage from '../../assets/hero_inner.jpg'
 export const HeaderTitle = styled.div`
 
-    background-image: url("http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/hero_inner_pages.jpg");
+    background-image: url(${innerImage});
     background-position: top;
     height: 20rem;
 

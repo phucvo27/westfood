@@ -3,23 +3,24 @@ import Grid from '../Grid/Grid.component';
 import { Text, TextBox, Image, Wrapper } from './Offer-Section.styled';
 import Button from '../Button/Button.component';
 import SectionTitle from '../Section-Title/Section-Title.component';
+//<p className='secondary-title'>WE OFFER YOU TO</p>
 const OfferSection = ()=>{
     return (
         <Wrapper>
             <SectionTitle>
                 <p className='secondary-title'>Sharing</p>
-                <h3 className='main-title'>Organic Food. Best Recipe. Happy Life</h3>
+                <h3 className='main-title'>CHĂM SÓC BẰNG YÊU THƯƠNG</h3>
                 <div className='line'></div>
             </SectionTitle>
             <Grid>
                 <Text>
                     <TextBox>
-                        <p className='secondary-title'>WE OFFER YOU TO</p>
+                        
                         <h1 className='main-title'>
-                            Unlock your potential with good <span className='highlight'>nutrition</span>
+                        VÀO BẾP CÙNG KHÓM MD2 - <span className='highlight'>WESTFOODS GOLD</span>
                         </h1>
                         <p>
-                            Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato
+                            Còn gì lý tưởng hơn chăm sóc bản thân và gia đình bằng những món ngon từ khóm? Westfoods hạnh phúc chia sẻ những công thức nấu ăn đơn giản, nhanh gọn mà vẫn đảm bảo được sự thơm ngon và dinh dưỡng cho từng bữa ăn của gia đình.
                         </p>
                         <Button 
                             text='Go To Our Blogs'

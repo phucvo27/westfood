@@ -9,10 +9,12 @@ const OrderSample = ()=>{
                 <Grid>
                     <Text>
                         <span>Order sample & test it.</span>
-                        <span className='highlight'>Become our partner.</span>
+                        <span className='highlight'>Hãy cộng tác cùng chúng tôi!</span>
 
                         <div className='line'></div>
-                        <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow.</p>
+                        <p>
+                            Westfoods mong muốn cùng bạn mang khóm ngọt bổ dưỡng và thơm ngon đến với các khách hàng. Westfoods tin tưởng những giá trị dinh dưỡng khi được sẻ chia sẽ mang đến một cộng đồng khỏe mạnh, cuộc sống chất lượng cao.
+                        </p>
                     </Text>
                     <div>
                         <Box>
