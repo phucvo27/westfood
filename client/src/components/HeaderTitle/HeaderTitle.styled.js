@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import innerImage from '../../assets/hero_inner.jpg'
+//import innerImage from '../../assets/hero_inner.jpg';
+
+//const innerImage = 'http://bdevs.net/theme/zomata/wp-content/uploads/2019/04/bg15.jpg';
+const innerImage = 'http://bdevs.net/theme/zomata/wp-content/uploads/2019/05/bg8.jpg';
 export const HeaderTitle = styled.div`
 
     background-image: url(${innerImage});
@@ -10,10 +13,11 @@ export const HeaderTitle = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 15rem 0;
 
     &::after {
         content: '';
-        display: block;
+        display: none;
         position: absolute;
 
         top: 0;
@@ -25,14 +29,21 @@ export const HeaderTitle = styled.div`
         opacity: .7;
         z-index: 1;
     }
+    @media screen and (max-width: 350px){
+        justify-content: center;
+    }
 `
 
 export const Content = styled.div`
 
     width: 77rem;
     margin-left: 20rem;
-    color: #fff;
+    color: #333;
     z-index: 2;
+    text-align: left;
+    @media screen and (max-width: 350px){
+        margin-left: 0rem;
+    }
     .title {
         font-size: 2.7rem;
         margin-bottom: 2rem;

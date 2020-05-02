@@ -52,10 +52,10 @@ export const RightContent = styled.div`
         border-top: 1px solid #ececeb;
         display: flex;
         padding: 1.2rem 0;
-
-        span {
-            display: block;
-            font-size: 1.2rem;
+        font-size: 1.4rem;
+        span.bold {
+            font-weight: 700;
+            padding-right: 1rem;
         }
     }
 

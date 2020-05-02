@@ -66,16 +66,16 @@ const Contact = ()=>{
                         <Title>
                             Contact Us
                         </Title>
-                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas human.</p>
+                        
                     
                         <div className='box-address'>
-                            <span>Address : No 40 Baria Sreet 133/2 NewYork City</span>
+                            <span className='bold'>Địa&nbsp;chỉ: </span> <span>KCN Cái Sơn Hàng Bàng, đường Hoàng Quốc Việt,  KV4, Phường An Bình,Quận Ninh Kièu, TP Cần Thơ </span>
                         </div>
                         <div className='box-address'>
-                            <span>Phone : 716-298-1822</span>
+                            <span className='bold'> Telephone: </span> <span>0292.3893893 – Fax: 0292.3894894 </span>
                         </div>
                         <div className='box-address'>
-                            <span>Email : info@example.com</span>
+                            <span className='bold'>Email: </span> <span>Support@example.com </span>
                         </div>
 
                         <WorkTime>

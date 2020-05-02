@@ -54,7 +54,7 @@ export const Navbar = styled.nav`
         .navigation__link {
             text-decoration: none;
             font-size: 1.6rem;
-            font-weight: 500;
+            font-weight: 700;
             text-transform: uppercase;
             display: inline-block;
             color: #444;
