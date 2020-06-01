@@ -1,14 +1,13 @@
 import React from 'react';
-import { HeaderTitle, Content } from './HeaderTitle.styled';
-
+import { HeaderTitle, ContentText } from './HeaderTitle.styled';
 
 const MyHeaderTitle = ({title, subTitle}) => {
     return (
         <HeaderTitle>
-            <Content>
+            <ContentText>
                 <h3 className='title'>{title}</h3>
                 <p className='subtitle'>{subTitle}</p>
-            </Content>
+            </ContentText>
         </HeaderTitle>
     )
 }

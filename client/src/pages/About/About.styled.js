@@ -11,10 +11,10 @@ export const Wrapper = styled.div`
 `
 export const Section = styled.section`
 
-    padding: 5rem 0 10rem;
+    padding: 5rem 0;
     width: 80%;
     background-color: ${color_white};
-    margin: 7rem auto;
+    margin: 5rem auto;
     
 `
 export const TextBox = styled.div`
@@ -51,6 +51,9 @@ export const ImageBox = styled.div`
 
     width: 100%;
     padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
         width: 100%;
     }

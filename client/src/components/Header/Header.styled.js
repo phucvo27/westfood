@@ -225,8 +225,8 @@ export const ContentText = styled.div`
 
     @media screen and (max-width: 650px){
         order: 2;
-        margin-top: 20rem;
-
+        margin-top: 0rem;
+        
         text-align: center;
     }
 `
@@ -241,7 +241,7 @@ export const ContentImage = styled.div`
     @media screen and (max-width: 650px){
         order: 1;
         img {
-            width: 45rem;
+            width: 35rem;
         }
     }
 `

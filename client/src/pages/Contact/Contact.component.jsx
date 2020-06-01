@@ -7,9 +7,9 @@ import Header from '../../components/Header/Header.component';
 import { Title, LeftContent, RightContent, WorkTime } from './Contact.styled';
 import Footer from '../../components/Footer/Footer.component';
 import HeaderTitle from '../../components/HeaderTitle/Header-Title.component';
-import GoogleMap from '../../components/Map/GoogleMap.component';
-
-const mapURl = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBmCyg8R6nJN_TSCtfJVbXot5th46mqswg&callback=initMap`;
+//import GoogleMap from '../../components/Map/GoogleMap.component';
+import MapBox from '../../components/MapBox/MapBox.component'
+//const mapURl = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBmCyg8R6nJN_TSCtfJVbXot5th46mqswg&callback=initMap`;
 
 const Contact = ()=>{
     console.log(process.env.REACT_APP_GOOGLE_API)
@@ -21,15 +21,16 @@ const Contact = ()=>{
                 subTitle='Podcasting operational change management inside of workflows to establish a framework.'
             />
             <Section paddingTop='2rem'>
-                
-                <GoogleMap 
+                <Title isHeadTitle={true}>Find Us At</Title>
+                {/* <GoogleMap 
                     isMarkerShown
                     googleMapURL={mapURl}
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div style={{ height: `500px` }} />}
                     mapElement={<div style={{ height: `100%` }} />}
                 
-                />
+                /> */}
+                <MapBox />
             </Section>
             <Section paddingTop='0rem'>
                 <Title isHeadTitle={true}>Send us an Email</Title>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section`
 
-    width: 80%;
+    width: 70%;
 
     padding: 4rem 0;
     margin: 0 auto;
