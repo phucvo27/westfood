@@ -6,9 +6,22 @@ export const Title = styled.h1`
     color: #222222;
     font-size: 3rem;
     line-height: 2.2rem;
-    margin-bottom: ${props => props.isHeadTitle ? '10rem' : '4.5rem'};
+    margin-bottom: 5rem;
     text-transform: uppercase;
     text-align: ${props => props.isHeadTitle ? 'center' : 'left'};
+
+
+    &.headTitle {
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 900px){
+            display: none
+        }
+    }
+    
 `;
 
 export const LeftContent = styled.div`

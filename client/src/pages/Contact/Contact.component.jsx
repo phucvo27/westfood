@@ -21,7 +21,7 @@ const Contact = ()=>{
                 subTitle='Podcasting operational change management inside of workflows to establish a framework.'
             />
             <Section paddingTop='2rem'>
-                <Title isHeadTitle={true}>Find Us At</Title>
+                <Title isHeadTitle={true} className='headTitle'>Find Us At</Title>
                 {/* <GoogleMap 
                     isMarkerShown
                     googleMapURL={mapURl}
@@ -32,12 +32,12 @@ const Contact = ()=>{
                 /> */}
                 <MapBox />
             </Section>
-            <Section paddingTop='0rem'>
-                <Title isHeadTitle={true}>Send us an Email</Title>
+            <Section>
+                <Title isHeadTitle={true} className='headTitle'>Contact Us</Title>
                 <Grid>
                     <LeftContent>
                         <Title>
-                            Tell us your project
+                            Send us an email
                         </Title>
                         <Grid>
                         <Input
@@ -65,7 +65,7 @@ const Contact = ()=>{
                     </LeftContent>
                     <RightContent>
                         <Title>
-                            Contact Us
+                            Address
                         </Title>
                         
                     

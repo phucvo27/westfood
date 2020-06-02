@@ -3,6 +3,15 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 
     width: 100%;
+    padding: .5rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover {
+        box-shadow: 0rem 1rem 2rem rgba(0,0,0, .15);
+    }
 `
 export const CardImage = styled.div`
     width: 100%;
@@ -11,6 +20,7 @@ export const CardImage = styled.div`
     cursor: pointer;
     img {
         width: 100%;
+        transition: all .4s;
     }
 
     &::after{
@@ -27,9 +37,8 @@ export const CardImage = styled.div`
         visibility: hidden;
         transition: opacity .4s, visibility .4s;
     }
-    &:hover::after {
-        opacity: .3;
-        visibility: visible;
+    &:hover img {
+        transform: scale(1.2);
     }
 
 `
@@ -44,7 +53,12 @@ export const CardBodyTitle = styled.div`
     text-align: center;
     padding: 1rem 0;
     font-weight: normal;
-
+    @media screen and (max-width: 1200px){
+        font-size: 3rem;
+    }
+    @media screen and (max-width: 900px){
+        font-size: 3.7rem;
+    }
     @media screen and (max-width: 650px){
         font-size: 3rem;
     }
@@ -56,6 +70,13 @@ export const CardBodyDescription = styled.div`
     text-align: center;
     font-weight: normal;
 
+    @media screen and (max-width: 1200px){
+        font-size: 1.8rem;
+    }
+    @media screen and (max-width: 900px){
+        font-size: 2.7rem;
+        margin-bottom: 3rem;
+    }
     @media screen and (max-width: 650px){
         font-size: 2rem;
         margin-bottom: 2rem;

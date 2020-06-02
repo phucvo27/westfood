@@ -9,14 +9,19 @@ export const Wrapper = styled.section`
     padding: 4rem 0;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 30rem 90rem;
+    grid-template-columns: 30% 70%;
     grid-column-gap: 3rem;
+
+    @media screen and (max-width: 1200px){
+        width: 90%;
+        grid-template-columns: 20% 80%;
+    }
 
     @media screen and (max-width: 800px){
         grid-template-columns: 1fr;
     }
 
-    @media screen and (max-width: 350px){
+    @media screen and (max-width: 900px){
         width: 90%;
     }
 `
@@ -38,7 +43,7 @@ export const LeftContent = styled.div`
         margin-bottom: 2.1rem;
     }
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
         display: none;
     }
 

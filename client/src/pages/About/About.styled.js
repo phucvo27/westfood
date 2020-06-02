@@ -15,13 +15,24 @@ export const Section = styled.section`
     width: 80%;
     background-color: ${color_white};
     margin: 5rem auto;
-    
+
+    @media screen and (max-width: 1200px){
+        width: 100%;
+    }
+    @media screen and (max-width: 900px){
+        width: 80%;
+    }
 `
 export const TextBox = styled.div`
 
     color: ${color_black};
     font-size: 2rem;
     padding: 7rem;
+
+    @media screen and (max-width: 1200px){
+        padding: 4rem 2rem 0;
+    }
+    
     .headline {
         font-size: 3.2rem;
         font-weight: normal;
@@ -39,7 +50,7 @@ export const TextBox = styled.div`
             font-weight: bold
         }
     }
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
         order: 2;
     }
     @media screen and (max-width: 650px){
@@ -58,7 +69,7 @@ export const ImageBox = styled.div`
         width: 100%;
     }
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
         order: 1;
     }
 

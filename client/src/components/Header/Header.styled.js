@@ -6,7 +6,7 @@ const color_black = '#333';
 const color_white = '#fff';
 export const HeaderContainer = styled.header`
 
-    width: 100%;
+    width: 100vw;
     height: ${props => props.isMainPage ? '90vh' : '7rem'};
     background: ${props => props.isMainPage ? `url(${bgImage})` : `${color_white}`};
     background-size: cover;
@@ -176,6 +176,11 @@ export const MainContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    @media screen and (max-width: 900px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     @media screen and (max-width: 650px){
         flex-direction: column;
         justify-content: center;
@@ -185,6 +190,13 @@ export const MainContent = styled.div`
 
 export const ContentText = styled.div`
     align-self: center;
+
+    @media screen and (max-width: 1200px){
+        padding-left: 5rem;
+    }
+    @media screen and (max-width: 900px){
+        padding-left: 0rem;
+    }
     .headlines {
         font-weight: 300;
         span {
@@ -206,6 +218,10 @@ export const ContentText = styled.div`
         height: .1rem;
         background-color: ${color_yellow};
         margin: 1rem 0;
+        @media screen and (max-width: 900px){
+            margin: auto;
+            display: inline-block;
+        }
         @media screen and (max-width: 650px){
             margin: auto;
             display: inline-block;
@@ -223,6 +239,12 @@ export const ContentText = styled.div`
         
     }
 
+    @media screen and (max-width: 900px){
+        order: 2;
+        margin-top: 0rem;
+        
+        text-align: center;
+    }
     @media screen and (max-width: 650px){
         order: 2;
         margin-top: 0rem;

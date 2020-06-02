@@ -26,7 +26,7 @@ export const Wrapper = styled.section`
         background-repeat: repeat;
     }
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
         height: 70rem;
     }
     @media screen and (max-width: 650px){
@@ -70,6 +70,9 @@ export const Text = styled.div`
     p {
         font-size: 1.5rem;
         color: #fff;
+        @media screen and (max-width: 900px){
+            font-size: 2.2rem;
+        }
         @media screen and (max-width: 650px){
             font-size: 2rem;
         }
@@ -85,6 +88,9 @@ export const Box = styled.div`
     .subtext {
         font-size: 1.6rem;
         margin-bottom: 1rem;
+        @media screen and (max-width: 900px){
+            font-size: 2.2rem;
+        }
         @media screen and (max-width: 650px){
             font-size: 2rem;
             margin-bottom: 2rem;

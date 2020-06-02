@@ -1,6 +1,5 @@
 import React from 'react';
-import { Wrapper, BlogImage, BlogText} from './Card-Blog.styled';
-import Button from '../Button/Button.component'
+import { Wrapper, BlogImage, BlogText, BlogButton} from './Card-Blog.styled';
 const CardBlog = ({ imageUrl })=>{
     return (
         <Wrapper>
@@ -19,7 +18,7 @@ const CardBlog = ({ imageUrl })=>{
                 <p>
                     Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero...
                 </p>
-                <Button text='Read More' isCenter={true} />
+                <BlogButton text='Read More' isCenter={true} href='/blogs/hehehe'>Read more</BlogButton>
             </BlogText>
         </Wrapper>
     )

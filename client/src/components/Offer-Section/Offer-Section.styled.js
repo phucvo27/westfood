@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
 
     width: 80%;
     margin: 0 auto;
+    @media screen and (max-width: 1200px){
+        width: 90%;
+    }
+    @media screen and (max-width: 900px){
+        width: 100%;
+    }
 `
 
 export const Text = styled.div`
@@ -22,9 +28,16 @@ export const Text = styled.div`
         font-size: 2rem;
         text-transform: uppercase;
 
+        @media screen and (max-width: 900px){
+            font-size: 2.7rem;
+        }
         @media screen and (max-width: 650px){
             font-size: 2.7rem;
         }
+        @media screen and (max-width: 350px){
+            font-size: 2.7rem;
+        }
+
     }
     .main-title {
         font-size: 3.4rem;
@@ -44,13 +57,16 @@ export const Text = styled.div`
     }
     p {
         font-size: 1.6rem;
+        @media screen and (max-width: 900px){
+            font-size: 2.2rem;
+        }
         @media screen and (max-width: 650px){
             font-size: 2.2rem;
         }
     }
 
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 650px){
         order: 2;
     }
 
@@ -59,8 +75,14 @@ export const TextBox = styled.div`
     width: 75%;
     padding-left: 10rem;
 
-    @media screen and (max-width: 800px){
-        width: 100%;
+    @media screen and (max-width: 1200px){
+        padding-left: 0;
+    }
+    @media screen and (max-width: 900px){
+        padding-left: 0;
+    }
+    @media screen and (max-width: 650px){
+        width: 100%
         padding-left: 0;
     }
 `
@@ -73,10 +95,7 @@ export const Image = styled.div`
         width: 100%;
     }
 
-    @media screen and (max-width: 800px){
-        order: 1;
-        margin-bottom: 2rem;
-    }
+    
 
 `
 

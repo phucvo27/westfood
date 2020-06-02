@@ -11,19 +11,15 @@ export const HeaderTitle = styled.div`
     background-position: center bottom;
     position: relative;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 15rem 0;
 
-    @media screen and (max-width: 350px){
-        justify-content: center;
-    }
+    
 `
 
 export const ContentText = styled.div`
 
-    width: 100%;
-    margin-left: 20rem;
     color: #333;
     z-index: 2;
     text-align: left;
@@ -32,9 +28,8 @@ export const ContentText = styled.div`
     align-items: center;
     flex-direction: column;
 
-    @media screen and (max-width: 350px){
-        margin-left: 0rem;
-    }
+
+    
     .title {
         font-size: 4rem;
         margin-bottom: 2rem;
@@ -42,6 +37,37 @@ export const ContentText = styled.div`
     .subtitle {
         font-size: 1.8rem;
         font-style: italic;
+    }
+    @media screen and (max-width: 1200px){
+        .title {
+            font-size: 4rem;
+        }
+        .subtitle {
+            width: 80%;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 900px){
+        .title {
+            font-size: 4rem
+        }
+        .subtitle{
+            width: 70%;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        
+    }
+    @media screen and (max-width: 650px){
+        .title {
+            font-size: 4rem;
+        }
+        .subtitle{
+            width: 80%;
+            font-size: 2.2rem;
+            text-align: center;
+        }
     }
 `
 

@@ -18,6 +18,10 @@ export const SectionTitle = styled.div`
         font-size: 1.6rem;
         font-weight: 400;
 
+        @media screen and (max-width: 900px){
+            font-size: 2.7rem;
+        }
+        
         @media screen and (max-width: 650px){
             font-size: 2.2rem;
         }
@@ -26,6 +30,11 @@ export const SectionTitle = styled.div`
         font-size: 2rem;
         font-style: italic;
         margin-bottom: 1rem;
+
+        @media screen and (max-width: 900px){
+            font-size: 3.2rem;
+        }
+
         @media screen and (max-width: 650px){
             font-size: 3rem;
         }
@@ -36,6 +45,9 @@ export const SectionTitle = styled.div`
         font-weight: normal;
         margin-bottom: 1rem;
 
+        @media screen and (max-width: 900px){
+            font-size: 3.7rem;
+        }
         @media screen and (max-width: 650px){
             font-size: 4.2rem;
         }

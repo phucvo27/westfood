@@ -6,7 +6,7 @@ import ScrollToTop from './components/Scroll-To-Top/Scroll-To-Top.component';
 const HomePage = lazy(()=> import('./pages/Home/Home.component'))
 const ContactPage = lazy(()=> import('./pages/Contact/Contact.component'))
 const AboutPage = lazy(()=> import('./pages/About/About.component'))
-const BlogPage = lazy(()=> import('./pages/Blog/Blog.component'))
+const BlogPage = lazy(()=> import('./pages/Blog/Blog-Page.component'))
 class App extends React.Component {
 
     render(){

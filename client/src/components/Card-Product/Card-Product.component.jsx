@@ -5,7 +5,7 @@ import {
     CardBody,
     CardBodyTitle,
     CardBodyDescription
-} from './Card-Product.styled';
+} from './Card-Product.styled.js';
 import Button from '../Button/Button.component';
 
 const Card = ({ imageUrl, title, description})=>{
