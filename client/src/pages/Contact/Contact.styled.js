@@ -24,6 +24,20 @@ export const Title = styled.h1`
     
 `;
 
+export const Section = styled.section`
+
+    padding: 0rem 0rem 10rem;
+    width: 84%;
+    margin: 0 auto;
+
+`;
+export const SectionMap = styled.section`
+
+    width: 84%;
+    margin: 5rem auto;
+
+`
+
 export const LeftContent = styled.div`
 
     padding-top: 11rem;

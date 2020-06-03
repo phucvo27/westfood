@@ -1,14 +1,15 @@
 import React from 'react';
 import Grid from '../../components/Grid/Grid.component';
-import { Button } from '../../components/Button/Button.styled';
-import Input from '../../components/Input/Input.component';
-import Section from '../../components/Section/Section.component';
+// import { Button } from '../../components/Button/Button.styled';
+// import Input from '../../components/Input/Input.component';
+//import Section from '../../components/Section/Section.component';
 import Header from '../../components/Header/Header.component';
-import { Title, LeftContent, RightContent, WorkTime } from './Contact.styled';
+import { Title, LeftContent, RightContent, WorkTime, SectionMap, Section } from './Contact.styled';
 import Footer from '../../components/Footer/Footer.component';
 import HeaderTitle from '../../components/HeaderTitle/Header-Title.component';
 //import GoogleMap from '../../components/Map/GoogleMap.component';
-import MapBox from '../../components/MapBox/MapBox.component'
+import MapBox from '../../components/MapBox/MapBox.component';
+import ContactForm from '../../components/Contact-Form/Contact-Form.component'
 //const mapURl = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBmCyg8R6nJN_TSCtfJVbXot5th46mqswg&callback=initMap`;
 
 const Contact = ()=>{
@@ -20,8 +21,8 @@ const Contact = ()=>{
                 title='Contact Us'
                 subTitle='Podcasting operational change management inside of workflows to establish a framework.'
             />
-            <Section paddingTop='2rem'>
-                <Title isHeadTitle={true} className='headTitle'>Find Us At</Title>
+            <SectionMap paddingTop='2rem'>
+                {/* <Title isHeadTitle={false} className='headTitle'>Find Us</Title> */}
                 {/* <GoogleMap 
                     isMarkerShown
                     googleMapURL={mapURl}
@@ -31,7 +32,7 @@ const Contact = ()=>{
                 
                 /> */}
                 <MapBox />
-            </Section>
+            </SectionMap>
             <Section>
                 <Title isHeadTitle={true} className='headTitle'>Contact Us</Title>
                 <Grid>
@@ -39,28 +40,7 @@ const Contact = ()=>{
                         <Title>
                             Send us an email
                         </Title>
-                        <Grid>
-                        <Input
-                            type='text'
-                            placeholder='Your name*'
-                        />
-                        <Input
-                            type='email'
-                            placeholder='Your Email*'
-                        />
-                        </Grid>
-                        <Input
-                            type='text'
-                            placeholder='Subject*'
-                        />
-                        <div>
-                            <textarea
-                                placeholder='Your message'
-                            />
-                        </div>
-                        <div>
-                            <Button>Submit</Button>
-                        </div>
+                        <ContactForm />
                         
                     </LeftContent>
                     <RightContent>

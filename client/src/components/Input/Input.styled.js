@@ -11,4 +11,9 @@ export const Input = styled.input`
     width: ${props => props.width ? props.width : '100%'};
     outline: none;
 
+
+    &.error {
+        border: .1rem solid red;
+    }
+
 `
