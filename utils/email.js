@@ -24,7 +24,7 @@ function sendEmail(to, template){
         hostname: 'api.mailgun.net',
         method: 'POST',
         path: '/v3/sandbox887c0cbcc07840d6a1070318ae46b2a7.mailgun.org/messages',
-        auth: 'api:2f1bf9b3cfa5568f9d4306cb7a23412c-65b08458-3977369d',
+        auth: 'api:API-KEY',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Content-Length': Buffer.byteLength(payload)
