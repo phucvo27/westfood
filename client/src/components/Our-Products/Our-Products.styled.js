@@ -23,7 +23,7 @@ export const SectionTitle = styled.div`
         }
         
         @media screen and (max-width: 650px){
-            font-size: 2.2rem;
+            font-size: 2.7rem;
         }
     }
     .secondary-title {

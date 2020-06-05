@@ -29,12 +29,19 @@ export const Section = styled.section`
     padding: 0rem 0rem 10rem;
     width: 84%;
     margin: 0 auto;
+    @media screen and (max-width: 650px){
+        width: 100%;
+    }
 
 `;
 export const SectionMap = styled.section`
 
     width: 84%;
     margin: 5rem auto;
+
+    @media screen and (max-width: 650px){
+        width: 100%;
+    }
 
 `
 

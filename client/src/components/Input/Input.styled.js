@@ -16,4 +16,9 @@ export const Input = styled.input`
         border: .1rem solid red;
     }
 
+    @media screen and (max-width: 900px){
+        font-size: 2.7rem;
+        height: 10rem;
+    }
+
 `

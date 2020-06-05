@@ -30,16 +30,23 @@ export const Wrapper = styled.section`
         border-left: .5rem solid #D8C149;
         padding: 1.5rem 0rem 1.5rem 4rem;
         font-size: 1.6rem;
+
+        @media screen and (max-width: 900px){
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width: 650px){
+            font-size: 2.7rem;
+        }
     }
 
     
     
     
     @media screen and (max-width: 900px){
-        
+        font-size: 2.5rem;
     }
     @media screen and (max-width: 650px){
-        font-size: 2rem
+        font-size: 3rem
     }
     @media screen and (max-width: 350px){
         font-size: 2rem

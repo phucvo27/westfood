@@ -61,7 +61,7 @@ export const Text = styled.div`
             font-size: 2.2rem;
         }
         @media screen and (max-width: 650px){
-            font-size: 2.2rem;
+            font-size: 2.7rem;
         }
     }
 

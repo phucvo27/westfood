@@ -61,6 +61,10 @@ export const Navbar = styled.nav`
             transition: color .4s;
 
             position: relative;
+
+            @media screen and (max-width: 900px){
+                font-size: 2.7rem;
+            }
         }
 
         .navigation__link::after {

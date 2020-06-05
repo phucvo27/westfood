@@ -21,8 +21,8 @@ export const LeftContent = styled.div`
     p {
         font-size: 1.4rem;
         margin-bottom: 2rem;
-        @media screen and (max-width: 650px){
-            font-size: 2.4rem
+        @media screen and (max-width: 900px){
+            font-size: 2.5rem
         }
     }
 `;
@@ -39,8 +39,9 @@ export const BoxAdress = styled.div`
         padding-right: 1rem;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         padding: 0;
+        font-size: 2.5rem;
     }
     @media screen and (max-width: 650px){
         font-size: 2.4rem;
@@ -67,7 +68,7 @@ export const RightContent = styled.div`
         padding-right: 1rem;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         padding: 0;
         margin-top: 2rem;
     }

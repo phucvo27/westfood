@@ -27,7 +27,7 @@ export const Wrapper = styled.section`
     }
 
     @media screen and (max-width: 900px){
-        height: 70rem;
+        height: 90rem;
     }
     @media screen and (max-width: 650px){
         height: 80rem;
@@ -71,10 +71,10 @@ export const Text = styled.div`
         font-size: 1.5rem;
         color: #fff;
         @media screen and (max-width: 900px){
-            font-size: 2.2rem;
+            font-size: 2.5rem;
         }
         @media screen and (max-width: 650px){
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 `
@@ -100,7 +100,7 @@ export const Box = styled.div`
         font-style: italic;
         display: block;
         @media screen and (max-width: 650px){
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 2rem;
         }
     }

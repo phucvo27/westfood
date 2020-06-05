@@ -25,4 +25,9 @@ export const Button = styled.button`
         border: .1rem solid ${yellow};
     }
 
+    @media screen and (max-width: 900px){
+        font-size: 2.5rem;
+        padding: 3rem 6rem;
+    }
+
 `
