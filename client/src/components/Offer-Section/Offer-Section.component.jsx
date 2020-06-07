@@ -3,6 +3,7 @@ import Grid from '../Grid/Grid.component';
 import { Text, TextBox, Image, Wrapper } from './Offer-Section.styled';
 import Button from '../Button/Button.component';
 import SectionTitle from '../Section-Title/Section-Title.component';
+import imgHealthFood from '../../assets/Offer-health-foods.webp';
 //<p className='secondary-title'>WE OFFER YOU TO</p>
 const OfferSection = ()=>{
     return (
@@ -31,7 +32,7 @@ const OfferSection = ()=>{
                     
                 </Text>
                 <Image>
-                    <img src='https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80' alt='pinapple' />
+                    <img src={imgHealthFood} alt='pinapple' />
                 </Image>
             </Grid>
         </Wrapper>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeaderContainer, Navbar, MainContent, ContentImage, ContentText, Burger, Line } from './Header.styled';
 import { withRouter, NavLink } from 'react-router-dom';
-import pineappleImage from '../../assets/pineapple.png';
+import pineappleImage from '../../assets/pineapple.webp';
 
 
 const Header = ({ isMainPage })=>{

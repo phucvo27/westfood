@@ -27,9 +27,7 @@ export const ContentText = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
-    
+    max-width: 70%;
     .title {
         font-size: 4rem;
         margin-bottom: 2rem;

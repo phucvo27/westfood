@@ -1,11 +1,12 @@
 const express = require('express');
+const compression = require('compression');
 const { isValidEmail, sendEmail } = require('./utils/email')
 
 const app = express();
 const STATIC_URL = `${__dirname}/client/build`;
 
 app.use(express.static(STATIC_URL));
-
+app.use(compression())
 app.get('/service-worker.js', (req, res)=>{
     res.sendFile(`${STATIC_URL}/service-worker.js`)
 });

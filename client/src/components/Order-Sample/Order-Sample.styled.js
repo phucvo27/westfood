@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-
+import orderBg from '../../assets/Order-bg.webp';
+import orderGrid from '../../assets/Order-grid.webp';
 const yellow = '#D8C149';
 const textColor = '#7e7b73';
 export const Wrapper = styled.section`
 
     width: 100%;
     height: 56rem;
-    background-image: url('http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/09/background_21.jpg');
+    background-image: url('${orderBg}');
     background-size: cover;
     background-position: center;
 
@@ -21,7 +22,7 @@ export const Wrapper = styled.section`
         z-index: 1;
         width: 100%;
         height: 100%;
-        background-image: url('http://organic-food.bold-themes.com/main-demo/wp-content/themes/organic-food/gfx/diagonalstripe-black.png');
+        background-image: url('${orderGrid}');
         background-position: center;
         background-repeat: repeat;
     }

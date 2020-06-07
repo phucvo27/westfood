@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-
+import footerBg from '../../assets/footer-bg.webp';
 
 export const Wrapper = styled.section`
 
-    background-image: url('https://cdn.shopify.com/s/files/1/0162/3932/9344/files/4.jpg?v=1546506413');
+    background-image: url('${footerBg}');
     background-position: top center;
     background-size: cover;
     margin-top: 5rem;

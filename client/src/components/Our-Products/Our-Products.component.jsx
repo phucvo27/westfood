@@ -2,7 +2,9 @@ import React from 'react';
 import { Wrapper , SectionTitle} from './Our-Products.styled';
 import Grid from '../Grid/Grid.component'
 import Card from '../Card-Product/Card-Product.component'
-
+import OurProduct1 from '../../assets/Our-Product-1.webp';
+import OurProduct2 from '../../assets/Our-Product-2.webp';
+import OurProduct3 from '../../assets/Our-Product-3.webp';
 const OurProducts = ( props ) => {
     return (
         <Wrapper>
@@ -14,22 +16,22 @@ const OurProducts = ( props ) => {
             </SectionTitle>
             <Grid>
                 <Card
-                    imageUrl='http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/products_06-640x640.jpg'
+                    imageUrl={OurProduct1}
                     title='Good Food'
                     description='Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage.'
                 />
                 <Card 
-                    imageUrl='http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/products_03-640x640.jpg'
+                    imageUrl={OurProduct2}
                     title='Organic Farming'
                     description='Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean.' 
                 />
                 <Card 
-                    imageUrl='http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/products_04-640x640.jpg'
+                    imageUrl={OurProduct3}
                     title='Real Taste'
                     description='Credibly innovate granular internal or “organic“ sources whereas high standards in web-readiness. Energistically scale core competencies.' 
                 />
                 <Card 
-                    imageUrl='http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/products_03-640x640.jpg'
+                    imageUrl={OurProduct1}
                     title='Organic Farming'
                     description='Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean.' 
                 />
