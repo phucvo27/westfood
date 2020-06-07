@@ -31,7 +31,7 @@ export const Wrapper = styled.section`
         height: 90rem;
     }
     @media screen and (max-width: 650px){
-        height: 80rem;
+        height: 90rem;
     }
 `;
 

@@ -93,7 +93,7 @@ export const RightContent = styled.div`
         }
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 900px){
         display: none;
     }
 `;
