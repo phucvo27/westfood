@@ -2,7 +2,7 @@ import React from 'react';
 import { HeaderContainer, Navbar, MainContent, ContentImage, ContentText, Burger, Line } from './Header.styled';
 import { withRouter, NavLink } from 'react-router-dom';
 import pineappleImage from '../../assets/pineapple.webp';
-
+import Logo from '../../assets/logo-WF.webp'
 
 const Header = ({ isMainPage })=>{
 
@@ -38,7 +38,7 @@ const Header = ({ isMainPage })=>{
                 <Navbar isMainPage={isMainPage}>
                     <div className='logo'>
                         <a href='/'>
-                            <img src="http://westfood.vn/wp-content/uploads/2017/09/logo.png" alt="logo-wf"/>
+                            <img src={Logo} alt="logo-wf"/>
                         </a>
                     </div>
                     {renderNavMenu()}

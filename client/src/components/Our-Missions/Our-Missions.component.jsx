@@ -4,10 +4,9 @@ import Section from '../Section/Section.component';
 import Button from '../Button/Button.component';
 import Grid from '../Grid/Grid.component';
 import { Container, Col, Image, Content } from './Our-Missions.styled';
-
-const imgSrc =  'http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/inner_illustration_5-640x640.jpg';
-const imgSrc2 = 'http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/inner_illustration_4-640x640.jpg';
-const imgSrc3 = 'http://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/inner_illustration_6-640x640.jpg'
+import ourMission1 from '../../assets/Our-mission-1.webp';
+import ourMission2 from '../../assets/Our-mission-2.webp';
+import ourMission3 from '../../assets/Our-mission-3.webp';
 const OurMissions = () => {
 
     return (
@@ -23,7 +22,7 @@ const OurMissions = () => {
                 <Grid>
                     <Col>
                         <Image>
-                            <img src={imgSrc} alt='recipe' />
+                            <img src={ourMission1} alt='recipe' />
                         </Image>
                         <Content>
                             <h3 className='headline'>Nutrition strategies</h3>
@@ -33,7 +32,7 @@ const OurMissions = () => {
                     </Col>
                     <Col>
                         <Image>
-                            <img src={imgSrc2} alt='recipe' />
+                            <img src={ourMission2} alt='recipe' />
                         </Image>
                         <Content>
                             <h3 className='headline'>Nutrition strategies</h3>
@@ -43,7 +42,7 @@ const OurMissions = () => {
                     </Col>
                     <Col>
                         <Image>
-                            <img src={imgSrc3} alt='recipe' />
+                            <img src={ourMission3} alt='recipe' />
                         </Image>
                         <Content>
                             <h3 className='headline'>Nutrition strategies</h3>
