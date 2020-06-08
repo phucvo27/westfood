@@ -16,10 +16,16 @@ export const Section = styled.section`
     background-color: ${color_white};
     margin: 5rem auto;
 
+    @media screen and (max-width: 1370px){
+        padding: 0;
+    }
+
     @media screen and (max-width: 1200px){
+        padding: 5rem 0;
         width: 100%;
     }
     @media screen and (max-width: 900px){
+        padding: 5rem 0;
         width: 80%;
     }
 `

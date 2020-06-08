@@ -264,6 +264,11 @@ export const ContentImage = styled.div`
         transform: scale(1) rotate(22deg);
     }
 
+    @media screen and (max-width: 1367px){
+        img {
+            width: 40rem;
+        }
+    }
     @media screen and (max-width: 650px){
         order: 1;
         img {
