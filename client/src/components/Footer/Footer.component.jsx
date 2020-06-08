@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper, Container, LeftContent, RightContent, LogoImage, BoxAdress, Title } from './Footer.styled';
 import Grid from '../Grid/Grid.component';
-
+import Logo from '../../assets/logo-WF.webp';
 
 const Footer = ()=>{
 
@@ -11,7 +11,7 @@ const Footer = ()=>{
                 <Grid>
                     <LeftContent>
                         <LogoImage>
-                            <img src='http://westfood.vn/wp-content/uploads/2017/09/logo.png' alt='westfood-logo' />
+                            <img src={Logo} alt='westfood-logo' />
                         </LogoImage>
                         
                         <p>

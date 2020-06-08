@@ -266,7 +266,7 @@ export const ContentImage = styled.div`
 
     @media screen and (max-width: 1370px){
         img {
-            width: 40rem;
+            width: 37rem;
         }
     }
     @media screen and (max-width: 650px){

@@ -9,7 +9,7 @@ const OurProducts = ( props ) => {
     return (
         <Wrapper>
             <SectionTitle>
-                <p className='secondary-title'>Our Proccess</p>
+                <p className='secondary-title'>Our Products</p>
                 <h3 className='main-title'>Good Food. Organic Farming. Real Taste.</h3>
                 <div className='line'></div>
                 <p>Grape silver beet watercress potato tigernut</p>
