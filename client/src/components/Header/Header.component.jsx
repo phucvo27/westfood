@@ -73,7 +73,7 @@ const Header = ({ isMainPage })=>{
                 <Navbar isMainPage={isMainPage}>
                     <div className='logo'>
                     <a href='/'>
-                        <img src="http://westfood.vn/wp-content/uploads/2017/09/logo.png" alt="logo-wf"/>
+                        <img src={Logo} alt="logo-wf"/>
                     </a>
                     </div>
                     {
