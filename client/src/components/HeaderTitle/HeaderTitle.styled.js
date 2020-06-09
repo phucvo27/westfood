@@ -31,6 +31,8 @@ export const ContentText = styled.div`
     .title {
         font-size: 4rem;
         margin-bottom: 2rem;
+        font-weight: 500;
+        text-align: center;
     }
     .subtitle {
         font-size: 1.8rem;
